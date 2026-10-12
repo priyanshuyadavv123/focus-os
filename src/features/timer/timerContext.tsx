@@ -27,7 +27,12 @@ interface TimerContextValue {
   state: EngineState;
   soundOn: boolean;
   setSoundOn: (on: boolean) => void;
-  start: (seconds?: number, kind?: SessionKind) => void;
+  start: (
+    seconds?: number,
+    kind?: SessionKind,
+    taskId?: string | null,
+    taskTitle?: string
+  ) => void;
   pause: () => void;
   resume: () => void;
   end: () => void;
@@ -136,9 +141,14 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     }
   }, [state]);
 
-  const start = (seconds?: number, kind?: SessionKind) => {
+  const start = (
+    seconds?: number,
+    kind?: SessionKind,
+    taskId?: string | null,
+    taskTitle?: string
+  ) => {
     const now = Date.now();
-    const next = startSession(stateRef.current, now, seconds, kind);
+    const next = startSession(stateRef.current, now, seconds, kind, taskId, taskTitle);
     setState(next);
     window.localStorage.setItem(ACTIVE_SESSION_STORAGE_KEY, JSON.stringify(next));
   };

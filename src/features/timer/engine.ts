@@ -63,15 +63,21 @@ export function startSession(
   state: EngineState,
   now: number,
   plannedSeconds?: number,
-  kind?: SessionKind
+  kind?: SessionKind,
+  taskId?: string | null,
+  taskTitle?: string
 ): EngineState {
   const finalSeconds = plannedSeconds ?? state.plannedSeconds;
   const finalKind = kind ?? state.kind;
+  const finalTaskId = taskId !== undefined ? taskId : state.taskId;
+  const finalTaskTitle = taskTitle !== undefined ? taskTitle : state.taskTitle;
   const remaining = finalSeconds * 1000;
 
   return {
     ...state,
     sessionId: `session_${now}_${Math.random().toString(36).substring(2, 7)}`,
+    taskId: finalTaskId,
+    taskTitle: finalTaskTitle,
     kind: finalKind,
     status: 'running',
     plannedSeconds: finalSeconds,
