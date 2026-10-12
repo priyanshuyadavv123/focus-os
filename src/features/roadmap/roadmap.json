@@ -1,0 +1,235 @@
+{
+  "semesters": [
+    {
+      "id": "y1s1",
+      "number": 1,
+      "year": 1,
+      "title": "Year 1, Semester 1 · Programming & Web Foundations",
+      "focus": "Python beginner, terminal, Git, responsive layout",
+      "goals": [
+        "Python fundamentals (variables, branching, while/for loops, functions)",
+        "HTML, CSS, JavaScript basics",
+        "Git and GitHub version control workflows",
+        "Terminal commands & shell navigation",
+        "HTTP protocols, hosting, responsive layout",
+        "Three small Python programs built and documented",
+        "Five customer discovery conversations on business track",
+        "NOVA landing page deployed"
+      ],
+      "milestones": [
+        {
+          "id": "m-y1s1-py",
+          "title": "Python Fundamentals",
+          "targetDate": "2026-11-30",
+          "criteria": [
+            { "id": "c1", "text": "Solve 30 practice problems on loops and conditional logic", "done": true },
+            { "id": "c2", "text": "Build 3 terminal CLI programs (calculator, quiz, expense counter)", "done": false },
+            { "id": "c3", "text": "Write clean docstrings and type annotations for all functions", "done": false }
+          ]
+        },
+        {
+          "id": "m-y1s1-web",
+          "title": "Web Foundations & NOVA Landing Page",
+          "targetDate": "2026-12-20",
+          "criteria": [
+            { "id": "c4", "text": "Master semantic HTML, CSS layout, and WCAG contrast", "done": true },
+            { "id": "c5", "text": "Deploy NOVA website landing page to static host", "done": false },
+            { "id": "c6", "text": "Conduct 5 customer discovery conversations with local businesses", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 1: Focused Python & Git sprint or open-source contribution"
+    },
+    {
+      "id": "y1s2",
+      "number": 2,
+      "year": 1,
+      "title": "Year 1, Semester 2 · Object-Oriented Design & Data Layer",
+      "focus": "Python OOP, testing, SQL, APIs",
+      "goals": [
+        "Python OOP (classes, inheritance, polymorphism, exceptions)",
+        "Unit testing with pytest / unittest",
+        "Browser JavaScript and DOM manipulation",
+        "SQL relational database basics (PostgreSQL / SQLite)",
+        "Data structures introduction (arrays, lists, stacks, queues)",
+        "APIs, JSON handling, and HTTP client requests",
+        "Lead-tracker CRUD application built"
+      ],
+      "milestones": [
+        {
+          "id": "m-y1s2-oop",
+          "title": "Python OOP & Test-Driven Development",
+          "targetDate": "2027-04-15",
+          "criteria": [
+            { "id": "c7", "text": "Design object models with inheritance and encapsulation", "done": false },
+            { "id": "c8", "text": "Write comprehensive unit test suites with 80%+ test coverage", "done": false }
+          ]
+        },
+        {
+          "id": "m-y1s2-lead",
+          "title": "Lead Tracker Full Prototype",
+          "targetDate": "2027-05-15",
+          "criteria": [
+            { "id": "c9", "text": "Design normalized SQL schema for business prospects", "done": false },
+            { "id": "c10", "text": "Connect frontend UI to JSON API endpoints", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 1: Software internship or supervised faculty project"
+    },
+    {
+      "id": "y2s3",
+      "number": 3,
+      "year": 2,
+      "title": "Year 2, Semester 3 · Data Structures & Algorithms",
+      "focus": "Recursion, trees, hash maps, sorting, advanced SQL",
+      "goals": [
+        "DSA (recursion, binary search trees, hash maps, heaps, sorting algorithms)",
+        "Object-oriented design patterns",
+        "SQL joins, indexes, query plans, transactions",
+        "Automated unit and integration testing",
+        "A tested workflow automation prototype"
+      ],
+      "milestones": [
+        {
+          "id": "m-y2s3-dsa",
+          "title": "Core Algorithmic Foundations",
+          "targetDate": "2027-11-30",
+          "criteria": [
+            { "id": "c11", "text": "Implement trees, graphs, and hash tables from scratch", "done": false },
+            { "id": "c12", "text": "Solve 50 algorithmic problems with time/space complexity analysis", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 2: Industry internship or open-source core library contributions"
+    },
+    {
+      "id": "y2s4",
+      "number": 4,
+      "year": 2,
+      "title": "Year 2, Semester 4 · Systems, Networks & Full-Stack MVP",
+      "focus": "Operating systems, computer networks, backend APIs, auth, CI/CD",
+      "goals": [
+        "Operating systems concepts (concurrency, threads, memory management)",
+        "Computer networks (TCP/IP, sockets, DNS, TLS)",
+        "Backend REST APIs with robust auth & security",
+        "CI/CD deployment pipelines",
+        "One narrow full-stack MVP launched with real user feedback"
+      ],
+      "milestones": [
+        {
+          "id": "m-y2s4-mvp",
+          "title": "Narrow Full-Stack Production MVP",
+          "targetDate": "2028-05-15",
+          "criteria": [
+            { "id": "c13", "text": "Deploy tested backend API with JWT authentication", "done": false },
+            { "id": "c14", "text": "Run a measurable user experiment with 10 real users", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 2: Technical internship at engineering firm"
+    },
+    {
+      "id": "y3s5",
+      "number": 5,
+      "year": 3,
+      "title": "Year 3, Semester 5 · Applied ML & Experimental Design",
+      "focus": "Probability, statistics, ML baselines, research reviews",
+      "goals": [
+        "Applied machine learning foundations",
+        "Probability and statistical inference",
+        "Experimental design and error analysis",
+        "Rigorous scientific literature reviews",
+        "Establish an experimental baseline for research"
+      ],
+      "milestones": [
+        {
+          "id": "m-y3s5-exp",
+          "title": "ML Baseline & Experimental Methodology",
+          "targetDate": "2028-11-30",
+          "criteria": [
+            { "id": "c15", "text": "Reproduce a peer-reviewed baseline model", "done": false },
+            { "id": "c16", "text": "Document quantitative metrics and error distributions", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 3: Supervised research lab or applied engineering internship"
+    },
+    {
+      "id": "y3s6",
+      "number": 6,
+      "year": 3,
+      "title": "Year 3, Semester 6 · AI Evaluation, Security & Faculty Mentorship",
+      "focus": "Evaluation benchmarks, monitoring, faculty guidance, business validation",
+      "goals": [
+        "Reliable AI evaluation and safety benchmarks",
+        "Monitoring and telemetry in production",
+        "One reproducible research paper / report",
+        "Faculty mentorship secured for capstone",
+        "Business profitability documented with verified metrics"
+      ],
+      "milestones": [
+        {
+          "id": "m-y3s6-eval",
+          "title": "Reproducible Evaluation Framework",
+          "targetDate": "2029-05-15",
+          "criteria": [
+            { "id": "c17", "text": "Publish reproducibility report with faculty feedback", "done": false },
+            { "id": "c18", "text": "Document audited revenue, expenses, and gross margin", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 3: Pre-placement internship or major research fellowship"
+    },
+    {
+      "id": "y4s7",
+      "number": 7,
+      "year": 4,
+      "title": "Year 4, Semester 7 · Capstone Scoping & Technical Interviews",
+      "focus": "Capstone specification, rigorous testing, career placement",
+      "goals": [
+        "Capstone project scoped with faculty advisor",
+        "Requirements, architecture, test plan, and evaluation protocol",
+        "Coding interview preparation (DSA, system design)",
+        "Evidence gathered on commercial market demand"
+      ],
+      "milestones": [
+        {
+          "id": "m-y4s7-cap",
+          "title": "Capstone Proposal & Architecture Sign-Off",
+          "targetDate": "2029-11-30",
+          "criteria": [
+            { "id": "c19", "text": "Deliver formal architectural spec with faculty sign-off", "done": false },
+            { "id": "c20", "text": "Complete mock technical interviews across algorithms & design", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 4: Transition to full-time career or commercial venture"
+    },
+    {
+      "id": "y4s8",
+      "number": 8,
+      "year": 4,
+      "title": "Year 4, Semester 8 · Capstone Delivery & Portfolio Synthesis",
+      "focus": "Capstone completion, portfolio showcase, long-term roadmap",
+      "goals": [
+        "Capstone project built, evaluated, and presented",
+        "Polished portfolio showcasing 3-5 production projects",
+        "Job placements / postgraduate applications completed",
+        "Data-driven decision on whether to continue business venture"
+      ],
+      "milestones": [
+        {
+          "id": "m-y4s8-port",
+          "title": "Portfolio Synthesis & Final Capstone Defense",
+          "targetDate": "2030-05-15",
+          "criteria": [
+            { "id": "c21", "text": "Present capstone defense with quantitative benchmarks", "done": false },
+            { "id": "c22", "text": "Finalize 5-project technical portfolio with open codebases", "done": false }
+          ]
+        }
+      ],
+      "summerTarget": "Summer 4: Graduation and professional launch"
+    }
+  ]
+}
