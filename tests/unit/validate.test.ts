@@ -28,6 +28,24 @@ describe('validate utility', () => {
     const result = validateImportJson(maliciousJson);
     expect(result.valid).toBe(false);
     expect(result.error).toContain('Forbidden key detected: __proto__');
+
+    const constructorJson = '{"schemaVersion": 1, "constructor": { "polluted": true }}';
+    const resConst = validateImportJson(constructorJson);
+    expect(resConst.valid).toBe(false);
+    expect(resConst.error).toContain('Forbidden key detected: constructor');
+
+    const protoJson = '{"schemaVersion": 1, "prototype": { "polluted": true }}';
+    const resProto = validateImportJson(protoJson);
+    expect(resProto.valid).toBe(false);
+    expect(resProto.error).toContain('Forbidden key detected: prototype');
+  });
+
+  it('rejects non-array collection fields and non-object settings', () => {
+    const invalidTasks = JSON.stringify({ ...INITIAL_DATA, tasks: 'not an array' });
+    expect(validateImportJson(invalidTasks).valid).toBe(false);
+
+    const invalidSettings = JSON.stringify({ ...INITIAL_DATA, settings: null });
+    expect(validateImportJson(invalidSettings).valid).toBe(false);
   });
 
   it('rejects unknown top-level keys', () => {
