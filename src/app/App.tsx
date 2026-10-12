@@ -11,6 +11,7 @@ import { RevenueView } from '@/features/revenue/RevenueView';
 import { ResearchView } from '@/features/research/ResearchView';
 import { AnalyticsView } from '@/features/analytics/AnalyticsView';
 import { SettingsView } from '@/features/settings/SettingsView';
+import { TimerProvider } from '@/features/timer/timerContext';
 
 export function App() {
   const [currentRoute, setCurrentRoute] = useState<RouteId | '404'>(() => {
@@ -50,5 +51,9 @@ export function App() {
     }
   };
 
-  return <Shell currentRoute={currentRoute}>{renderView()}</Shell>;
+  return (
+    <TimerProvider>
+      <Shell currentRoute={currentRoute}>{renderView()}</Shell>
+    </TimerProvider>
+  );
 }

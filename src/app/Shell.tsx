@@ -12,6 +12,7 @@ import {
   MoreIcon,
   CloseIcon,
 } from '@/design/icons';
+import { MiniTimerBar } from '@/features/timer/MiniTimerBar';
 import '@/design/layout.css';
 
 interface ShellProps {
@@ -85,6 +86,7 @@ export function Shell({ currentRoute, children }: ShellProps) {
 
       {/* Main Content Area */}
       <div className="main-wrapper">
+        <MiniTimerBar currentRoute={currentRoute} />
         <div className="content-area">{children}</div>
       </div>
 
