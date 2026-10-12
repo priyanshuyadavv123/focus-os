@@ -1,0 +1,74 @@
+:root {
+  /* Colors */
+  --bg: #000000;
+  --surface: #0E0E10;
+  --surface-2: #161618;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text: #F5F5F7;
+  --text-2: #B4B4B8;
+  --text-3: #8E8E93;
+  --accent: #8C84F5;
+  --success: #7BC79A;
+  --warning: #E0B25C;
+  --danger: #E0696B;
+
+  /* Typography */
+  --font-text: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  --font-display: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-28: 28px;
+  --font-size-40: 40px;
+
+  /* Spacing */
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+
+  /* Radius */
+  --radius-control: 10px;
+  --radius-card: 16px;
+  --radius-full: 9999px;
+
+  /* Motion */
+  --motion-interactive: 160ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --motion-view: 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Layout */
+  --sidebar-width: 232px;
+  --content-max-width: 1120px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-text);
+  font-size: var(--font-size-16);
+  line-height: 1.5;
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

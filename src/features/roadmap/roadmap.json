@@ -1,0 +1,40 @@
+{
+  "semesters": [
+    {
+      "id": "y1s1",
+      "name": "Year 1, Semester 1",
+      "goals": [
+        "Python fundamentals",
+        "HTML, CSS, JavaScript basics",
+        "Git and GitHub",
+        "Terminal commands",
+        "HTTP, hosting, responsive layout",
+        "Three small Python programs",
+        "Five customer conversations on the business track",
+        "NOVA landing page deployed"
+      ],
+      "milestones": [
+        {
+          "id": "m-y1s1-python",
+          "title": "Python Basics Mastery",
+          "criteria": [
+            "Complete variables, conditions, and loops",
+            "Build 3 terminal programs in Python",
+            "Write clean functions with docstrings"
+          ],
+          "targetDate": "2026-12-15"
+        },
+        {
+          "id": "m-y1s1-web-git",
+          "title": "Web & Git Foundations",
+          "criteria": [
+            "Learn Git commit, branch, merge workflows",
+            "Build responsive HTML/CSS static page",
+            "Deploy NOVA landing page"
+          ],
+          "targetDate": "2027-01-15"
+        }
+      ]
+    }
+  ]
+}
